@@ -1,0 +1,113 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <div id="container">
+            
+            <div id="header">
+                
+                <div id="period-con">
+                    <div>
+                        <p class="p-text">Period</p>
+                        <button id="add-period" class="add-1" onclick="addPeriod()">Add</button>
+                    </div>
+                    <div class="period-board status-board">
+                        <p id="period-point" class="status">0</p>
+                    </div>
+                </div>
+                
+                <div id="time-con">
+                    <div>
+                        <p id="p-time" class="p-text">Time</p>
+                        <button id="start-time" onclick="startTimer()">Start</button>
+                    </div>
+                    <div class="time-board">
+                        <p id="timer" class="status">00:00</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div id="main">
+                    
+                <div class="main-col">
+                    
+                    <div class="heading">
+                        <h3 class="h3">HOME</h3>
+                    </div>
+                    
+                    <div class="score-board">
+                        <p id="home-point" class="point">0</p>
+                    </div>
+                    
+                    <div class="add-pt-btns">
+                        <div class="add-pt-btn h-btn-1">
+                            <button class="add-point add-hpt-1" onclick="hadd1()">+1</button>
+                        </div>
+                        <div class="add-pt-btn h-btn-2">
+                            <button class="add-point add-hpt-2" onclick="hadd2()">+2</button>
+                        </div>
+                        <div class="add-pt-btn h-btn-3">
+                            <button class="add-point add-hpt-3" onclick="hadd3()">+3</button>
+                        </div>
+                    </div>                    
+                </div>
+                    
+                <div id="main-col">
+                    <button id="new-game" onclick="startNew()">New Game</button>
+                </div>
+            
+                <div class="main-col">
+                    
+                    <div class="heading">
+                        <h3 class="h3"  >GUEST</h3>
+                    </div>
+                    
+                    <div class="score-board">
+                        <p id="guest-point" class="point">0</p>
+                    </div>
+                    
+                    <div class="add-pt-btns">
+                        <div class="add-pt-btn g-btn-1">
+                            <button class="add-point add-gpt-1" onclick="gadd1()">+1</button>
+                        </div>
+                        <div class="add-pt-btn g-btn-2">
+                            <button class="add-point add-gpt-2" onclick="gadd2()">+2</button>
+                        </div>
+                        <div class="add-pt-btn g-btn-3">
+                            <button class="add-point add-gpt-3" onclick="gadd3()">+3</button>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+            
+            <div id="footer">
+                    
+                <div id="home-foul-con" class="foul-con">
+                    
+                    <div class="foul-text&btn">
+                        <p class="p-text">H Foul</p>
+                        <button id="home-foul-add-btn" class="add-1" onclick="addHomeFoul()">Add</button>
+                    </div>
+                    <div class="foul-board">
+                        <p id="home-foul" class="status">0</p>
+                    </div>
+                </div>
+                                   
+                <div id="guest-foul-con" class="foul-con">
+            
+                    <div class="foul-text&btn">
+                        <p class="p-text">G Foul</p>
+                        <button id="guest-foul-add-btn"  class="add-1" onclick="addGuestFoul()">Add</button>
+                    </div>
+                    
+                    <div class="foul-board">
+                        <p id="guest-foul" class="status">0</p>
+                    </div>
+                </div>
+                
+            </div>
+        <script src="js/index.js"></script>
+    </body>
+</html>
